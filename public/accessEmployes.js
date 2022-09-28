@@ -21,84 +21,92 @@ initApp = function () {
                 document.getElementById('sign-in-status').textContent = 'Signed in';
                 document.getElementById('account-details').innerHTML = `
             <form id="CV Send">
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+            <div class="form-group field">
+                <label class="label" for="firstName">First Name</label>
+                <input type="text" class="form-control input" id="firstName" placeholder="First Name">
             </div>
             <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                <label class="label" for="lastName">Last Name</label>
+                <input type="text" class="form-control input" id="lastName" placeholder="Last Name">
             </div>
             <div class="form-group">
-                <label for="homePhone">Home Phone</label>   
-                <input type="tel" class="form-control" id="homePhone" placeholder="Home Phone">
+                <label class="label" for="homePhone">Home Phone</label>   
+                <input type="tel" class="form-control input" id="homePhone" placeholder="Home Phone">
             </div>
             <div class="form-group">
-                <label for="cellPhone">Cell Phone</label>
-                <input type="tel" class="form-control" id="cellPhone" placeholder="Cell Phone">
+                <label class="label" for="cellPhone">Cell Phone</label>
+                <input type="tel" class="form-control input" id="cellPhone" placeholder="Cell Phone">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <label class="label" for="email">Email</label>
+                <input type="email" class="form-control input" id="email" placeholder="Email">
+            </div>
+            <div class="form-group field">
+                <label class="label" for="post">Post</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="form-control" id="post">
+                            <option>Poste 1</option>
+                            <option>Poste 2</option>
+                            <option>Poste 3</option>
+                            <option>Poste 4</option>
+                            <option>Poste 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group field">
+                <label class="label" for="quebecRegion">Quebec Region</label>
+                <div class="control">
+                    <div class="select">
+                        <select class="form-control" id="quebecRegion">
+                            <option>Region 1</option>
+                            <option>Region 2</option>
+                            <option>Region 3</option>
+                            <option>Region 4</option>
+                            <option>Region 5</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
-                <label for="post">Post</label>
-                <select class="form-control" id="post">
-                    <option>Post 1</option>
-                    <option>Post 2</option>
-                    <option>Post 3</option>
-                    <option>Post 4</option>
-                    <option>Post 5</option>
-                </select>
+                <label class="label" for="cv">CV</label>
+                <input type="file" class="form-control-file input" id="cv">
             </div>
             <div class="form-group">
-                <label for="quebecRegion">Quebec Region</label>
-                <select class="form-control" id="quebecRegion">
-                    <option>Region 1</option>
-                    <option>Region 2</option>
-                    <option>Region 3</option>
-                    <option>Region 4</option>
-                    <option>Region 5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="cv">CV</label>
-                <input type="file" class="form-control-file" id="cv">
-            </div>
-            <div class="form-group">
-                <label for="activitySectors">Activity Sectors</label>
+                <label class="label" for="activitySectors">Activity Sectors</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="activitySectors1">
-                    <label class="form-check-label" for="activitySectors1">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="activitySectors1">
+                    <label class="checkbox" for="activitySectors1">
                         Activity Sector 1
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="activitySectors2">
-                    <label class="form-check-label" for="activitySectors2">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="activitySectors2">
+                    <label class="checkbox" for="activitySectors2">
                         Activity Sector 2
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="activitySectors3">
-                    <label class="form-check-label" for="activitySectors3">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="activitySectors3">
+                    <label class="checkbox" for="activitySectors3">
                         Activity Sector 3
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="activitySectors4">
-                    <label class="form-check-label" for="activitySectors4">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="activitySectors4">
+                    <label class="checkbox" for="activitySectors4">
                         Activity Sector 4
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="activitySectors5">
-                    <label class="form-check-label" for="activitySectors5">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="activitySectors5">
+                    <label class="checkbox" for="activitySectors5">
                         Activity Sector 5
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary button is-primary">Submit</button>
         </form>`
                 document.getElementById('account-details').innerHTML += JSON.stringify({
                     uid: uid,
