@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyDo6uEMccejvqobrUk0aqDrLaquJ0r3Vp8",
     authDomain: "projetweb2-5b51e.firebaseapp.com",
@@ -11,3 +12,16 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Initialize the FirebaseUI Widget using Firebase.
+var uiConfig = {
+    signInSuccessUrl: 'accesEmployes.html',
+    signInOptions: [
+        firebase.auth.EmailAuthProvider.PROVIDER_ID,
+        firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+    ],
+}
+
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
+ui.start('#firebaseui-auth-container', uiConfig);
+
