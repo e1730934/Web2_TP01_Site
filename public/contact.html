@@ -2,11 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Title</title>
-    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
-
 </head>
 <body>
+<nav>
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarTP1">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarTP1" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="./index.html">Accueil</a>
+            <a class="navbar-item" href="./listePoste.html">Liste emplois</a>
+            <a class="navbar-item" href="./accesEmployes.html">Accès employé</a>
+            <a class="navbar-item" href="./contact.html">Contact</a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary" href="./signup.html">
+                        <strong>S'inscrire</strong>
+                    </a>
+                    <a class="button is-light" href="./login.html">
+                        Se connecter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <form id="contact-form">
     <label for="name">Nom complet</label>
     <input type="text" name="name" id="name" placeholder="Nom complet" required value="Default name">
