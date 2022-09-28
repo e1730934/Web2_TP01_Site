@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+
 </head>
 <body>
-
+<form id="contact-form">
+    <label for="name">Nom complet</label>
+    <input type="text" name="name" id="name" placeholder="Nom complet" required value="Default name">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Email" required value="default@email.com">
+    <label for="phone">Téléphone</label>
+    <input type="tel" name="phone" id="phone" placeholder="Téléphone" required value="555-555-5555">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required>Default text</textarea>
+    <input type="submit" value="Envoyer">
+</form>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script defer src="./contact.js"></script>
 </body>
 </html>
