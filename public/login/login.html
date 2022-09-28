@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarTP1">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarTP1" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../index.html">Accueil</a>
+            <a class="navbar-item" href="../listePoste.html">Liste emplois</a>
+            <a class="navbar-item" href="../accesEmployes/accesEmployes.html">Accès employé</a>
+            <a class="navbar-item" href="../contact/contact.html">Contact</a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary" href="../signup/signup.html">
+                        <strong>S'inscrire</strong>
+                    </a>
+                    <a class="button is-light" href="./login/login.html">
+                        Se connecter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="firebaseui-auth-container"></div>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script defer src="login.js" type="module"></script>
+
+
+</body>
+</html>

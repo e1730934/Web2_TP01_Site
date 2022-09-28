@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <nav>
@@ -18,10 +16,10 @@
     </div>
     <div id="navbarTP1" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" href="./index.html">Accueil</a>
-            <a class="navbar-item" href="./listePoste.html">Liste emplois</a>
-            <a class="navbar-item" href="./accesEmployes.html">Accès employé</a>
-            <a class="navbar-item" href="./contact.html">Contact</a>
+            <a class="navbar-item" href="../index.html">Accueil</a>
+            <a class="navbar-item" href="../listePoste.html">Liste emplois</a>
+            <a class="navbar-item" href="../accesEmployes/accesEmployes.html">Accès employé</a>
+            <a class="navbar-item" href="../contact/contact.html">Contact</a>
         </div>
         <div class="navbar-end">
             <div class="navbar-item">
@@ -29,7 +27,7 @@
                     <a class="button is-primary" href="./signup.html">
                         <strong>S'inscrire</strong>
                     </a>
-                    <a class="button is-light" href="./login.html">
+                    <a class="button is-light" href="../login/login.html">
                         Se connecter
                     </a>
                 </div>
@@ -37,13 +35,26 @@
         </div>
     </div>
 </nav>
-
-<div id="firebaseui-auth-container"></div>
+<div class="container">
+<form id="signup-form">
+    <div class="field">
+        <label class="label" for="email">Email</label>
+        <div class="control">
+            <input class="input" type="email" name="email" id="email" placeholder="Email" required value="test@test.com"/>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label" for="password">Password</label>
+        <div class="control">
+            <input class="input" type="password" name="password" id="password" placeholder="Password" required value="123456"/>
+        </div>
+    </div>
+    <input class="button is-primary" type="submit" value="Signup"/>
+</form>
+</div>
 <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-<script defer src="./login.js" type="module"></script>
-
-
+<script defer src="signup.js"></script>
 </body>
 </html>
